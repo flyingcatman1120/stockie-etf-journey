@@ -29,12 +29,10 @@ Stockie ETF Journey 是一個以靜態前端製作的視覺化作品，透過角
 
 ### 專案截圖
 
-建議在此放 1 至 3 張畫面截圖，例如首頁 Hero、ETF 四大世界觀、ETF 卡牌列表。
-
-```text
-![Hero Screenshot](./assets/images/your-screenshot-hero.png)
-![Worldview Screenshot](./assets/images/your-screenshot-worldview.png)
-```
+![Home Hero](./assets/screenshots/Home-Hero.png)
+![Content](./assets/screenshots/Content.png)
+![World](./assets/screenshots/World.png)
+![ETF Cards List](./assets/screenshots/etfCardsList.png)
 
 ### 作品特色
 
@@ -137,7 +135,10 @@ After publishing this repository, add your live site link here.
 
 ### Screenshots
 
-Add 1 to 3 screenshots here, such as the hero section, worldview section, and ETF card list.
+![Home Hero](./assets/screenshots/Home-Hero.png)
+![Content](./assets/screenshots/Content.png)
+![World](./assets/screenshots/World.png)
+![ETF Cards List](./assets/screenshots/etfCardsList.png)
 
 ### Features
 
