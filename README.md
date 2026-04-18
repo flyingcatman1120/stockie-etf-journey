@@ -23,8 +23,6 @@ Stockie ETF Journey 是一個以靜態前端製作的視覺化作品，透過角
 
 ### Demo
 
-專案發布後，可以將線上展示連結補在這裡。
-
 - GitHub Pages：`https://flyingcatman1120.github.io/stockie-etf-journey/`
 
 ### 專案截圖
@@ -101,7 +99,6 @@ git push -u origin main
 
 - 此 repository 會包含專案使用到的本地素材與圖片資源。
 - 若引用第三方套件，請保留其附帶的 `LICENSE.txt` 等授權文件。
-- 若要作為正式作品集展示，建議補上實際 Demo 連結與網站截圖。
 
 ### 未來可優化方向
 
@@ -128,8 +125,6 @@ This project turns ETF education into a narrative-driven landing page experience
 - Emphasize investment rhythm and mindset before product comparison
 
 ### Demo
-
-After publishing this repository, add your live site link here.
 
 - GitHub Pages: `https://flyingcatman1120.github.io/stockie-etf-journey/`
 
@@ -207,7 +202,6 @@ After pushing, enable GitHub Pages in the repository settings and choose the `ma
 
 - The repository includes local assets and images used by the project.
 - Keep `LICENSE.txt` files from third-party assets when applicable.
-- For a stronger portfolio presentation, add a real demo URL and screenshots.
 
 ### Possible Next Improvements
 
