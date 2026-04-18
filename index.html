@@ -1,0 +1,759 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stockie ETF Journey</title>
+    <meta
+      name="description"
+      content="Stockie ETF Journey 是一個以視覺化卡牌與角色世界觀介紹 ETF 基礎概念的靜態網站作品。"
+    />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/layout.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome-free-7.2.0-web/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome-free-7.2.0-web/css/solid.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Top Nav -->
+    <div class="nav-wrap">
+      <a href="#home" class="brand js-scroll" aria-label="Stockie Home">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span class="brand-text">Stockie</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav">
+        <a href="#etf-what" class="nav-link js-scroll">ETF 是什麼</a>
+        <a href="#etf-benefits" class="nav-link js-scroll">了解 ETF</a>
+        <a href="#mindset" class="nav-link js-scroll">存股心法</a>
+        <a href="#etf-cards" class="nav-link js-scroll">ETF 卡牌</a>
+        <a href="#next" class="nav-link js-scroll">下一步</a>
+      </nav>
+
+      <!-- CTA -->
+      <a href="#etfCardsContainer" class="nav-cta js-scroll">十大熱門 ETF</a>
+
+      <!-- Mobile hamburger Nav -->
+      <button
+        class="hamburger"
+        type="button"
+        aria-label="Open menu"
+        aria-controls="mobileNav"
+        aria-expanded="false"
+      >
+        <span class="hamburger-bar" aria-hidden="true"></span>
+        <span class="hamburger-bar" aria-hidden="true"></span>
+        <span class="hamburger-bar" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <!-- Mobile extended Nav -->
+    <div id="mobileNav" class="mobile-nav" hidden>
+      <a href="#etf-what" class="mobile-link js-scroll">ETF 是什麼</a>
+      <a href="#etf-benefits" class="mobile-link js-scroll">了解 ETF</a>
+      <a href="#mindset" class="mobile-link js-scroll">存股心法</a>
+      <a href="#etf-cards" class="mobile-link js-scroll">ETF 卡牌</a>
+      <a href="#next" class="mobile-link js-scroll">下一步</a>
+    </div>
+
+    <!-- Scroll Progress -->
+    <div class="progress" aria-hidden="true">
+      <div id="progressBar" class="progress-bar"></div>
+    </div>
+
+    <header id="site-header" class="site-header">
+      <!-- Hero -->
+      <section id="home" class="hero" aria-label="Hero">
+        <div class="hero-section">
+          <h2 class="section-title">
+            <span class="section-title__text">ETF 視覺化卡牌</span>
+            <span class="section-title__arrow" aria-hidden="true">↘</span>
+          </h2>
+
+          <div class="hero-row">
+            <div class="hero-copy">
+              <h1 class="hero-title">
+                <span class="hero-title__phrase">用角色卡牌，</span>
+                <span class="hero-title__phrase">重新理解 ETF</span>
+                <span class="hero-title__phrase">不是選商品，</span>
+                <span class="hero-title__phrase">是選位置。</span>
+              </h1>
+
+              <a class="cta-btn creepy-btn js-scroll" href="#explain-ETF">
+                <!-- 眼睛 -->
+                <span class="creepy-btn__eyes" aria-hidden="true">
+                  <span class="creepy-btn__eye">
+                    <span class="creepy-btn__pupil"></span>
+                  </span>
+                  <span class="creepy-btn__eye">
+                    <span class="creepy-btn__pupil"></span>
+                  </span>
+                </span>
+                <!-- 蓋子 -->
+                <span class="creepy-btn__cover">
+                  <span class="cta-btn__label">Get Started</span>
+                  <span class="cta-btn__icon">↗</span>
+                </span>
+              </a>
+            </div>
+
+            <div class="hero-media">
+              <img
+                src="./assets/images/Hero-Charactor.png"
+                alt="Stockie 角色"
+              />
+            </div>
+          </div>
+
+          <section id="explain-ETF" class="split split--section">
+            <div class="split__media">
+              <img
+                src="./assets/images/ETF-direction.png"
+                alt="ETF direction"
+              />
+            </div>
+
+            <div class="split__content">
+              <p>
+                ETF 對多數人來說很陌生，<br />
+                不是因為它太複雜，<br />
+                而是我們總是被迫用「金融語言」去理解它。
+              </p>
+              <p>Stockie 把 ETF 轉譯成一個直覺的世界：</p>
+              <ul class="category-list">
+                <li>
+                  <i class="fa-solid fa-building category-icon"></i>
+                  <span class="category-label">角色</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-layer-group category-icon"></i>
+                  <span class="category-label">姿態</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-coins category-icon"></i>
+                  <span class="category-label">動能</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-chart-line category-icon"></i>
+                  <span class="category-label">時間</span>
+                </li>
+              </ul>
+              <p>
+                你不用先懂投資，<br />
+                只需要先問一個問題：
+              </p>
+              <h3>「我想站在市場的哪個位置？」</h3>
+              <p>從 ETF 開始，是因為它是最穩健、最透明的第一步。</p>
+            </div>
+          </section>
+
+          <p class="hero-desc">
+            Stockie 把不同 ETF
+            的特性轉譯成直覺的角色與場景，讓你用「一眼看懂」的方式，
+            建立長期投資的基本概念與心法。
+          </p>
+          <h3>
+            這不是一個教你怎麼投資的網站， 而是讓你先站在一個不會慌的位置上。
+          </h3>
+
+          <div
+            class="cta-group cta-group--pair"
+            role="navigation"
+            aria-label="Hero quick actions"
+          >
+            <a class="cta-btn js-scroll" href="#etf-cards">
+              <span class="cta-btn__label">看 ETF 卡牌</span>
+              <span class="cta-btn__icon" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="cta-btn js-scroll" href="#etf-what">
+              <span class="cta-btn__label">先理解 ETF 是什麼</span>
+              <span class="cta-btn__icon" aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <!-- Scroll hint -->
+          <a
+            class="hero-hint js-scroll"
+            href="#etf-what"
+            aria-label="往下滑，開始探索 ETF 的世界"
+          >
+            <span class="hero-hint__text">往下滑，開始探索 ETF 的世界</span>
+            <span class="hero-hint__arrow" aria-hidden="true"></span>
+          </a>
+        </div>
+      </section>
+    </header>
+
+    <main id="main">
+      <!-- ETF 介紹 -->
+      <section id="etf-what" class="section">
+        <h2 class="section-title">
+          <span class="section-title__text">ETF 是什麼？</span>
+          <span class="section-title__arrow" aria-hidden="true">↘</span>
+        </h2>
+
+        <section class="split split--section">
+          <div class="split__media">
+            <img src="./assets/images/What-is-ETF.png" alt="ETF direction" />
+          </div>
+
+          <div class="split__content">
+            <h2>ETF，是一種「有規則的組合」</h2>
+            <p>
+              對股市新手來說， 真正困難的不是漲跌，
+              而是每天都要面對「我該不該動」。
+            </p>
+            <p>
+              ETF（Exchange Traded Fund） 是一種
+              追蹤特定指數、像股票一樣交易的基金。
+            </p>
+            <p>
+              你可以把它想成一份「指定條件的便當」：<br />
+              不是隨意亂配， 也不是完全交給主廚發揮，<br />
+              而是清楚寫好規則，照表執行 這些規則，來自「指數」。
+            </p>
+            <p>
+              你不需要每天盯盤， 也不需要預測市場， 你只是在市場裡，
+              站在一個會自己運作的位置上。
+            </p>
+          </div>
+        </section>
+      </section>
+
+      <!-- 解說 ETF 的好處 -->
+      <section id="etf-benefits" class="section">
+        <h2 class="section-title">
+          <span class="section-title__text">了解 ETF：指數是什麼？</span>
+          <span class="section-title__arrow" aria-hidden="true">↘</span>
+        </h2>
+        <section class="split split--section is-reverse">
+          <div class="split__media">
+            <img src="./assets/images/What-is-index.png" alt="ETF direction" />
+          </div>
+
+          <div class="split__content">
+            <h2>指數，是一套選擇邏輯</h2>
+            <p>在金融市場中， 指數不是價格，而是一種篩選方式。</p>
+            <p>它可能根據：</p>
+            <ul class="category-list">
+              <li>
+                <i class="fa-solid fa-building category-icon"></i>
+                <span class="category-label">市值大小</span>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-layer-group category-icon"></i>
+                <span class="category-label">產業分類</span>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-coins category-icon"></i>
+                <span class="category-label">配息水準</span>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-chart-line category-icon"></i>
+                <span class="category-label">波動程度</span>
+              </li>
+
+              <li class="wide">
+                <i class="fa-solid fa-star category-icon"></i>
+                <span class="category-label">公司治理評分</span>
+              </li>
+            </ul>
+            <p>ETF 的工作，就是 照著這套規則行走。</p>
+            <p>
+              當規則改變，持股就跟著調整。<br />
+              沒有猜測，沒有情緒，只有執行。
+            </p>
+          </div>
+        </section>
+
+        <h2 class="section-title">
+          <span class="section-title__text">了解 ETF：時間與節奏</span>
+          <span class="section-title__arrow" aria-hidden="true">↘</span>
+        </h2>
+        <section class="split split--section">
+          <div class="split__media">
+            <img src="./assets/images/Time-n-rythem.png" alt="ETF rythem" />
+          </div>
+          <div class="split__content">
+            <h2>ETF 的差別，不是誰比較厲害</h2>
+            <p>有些 ETF， 適合什麼都不做，只要長時間站著。</p>
+            <p>有些 ETF， 重視穩定與節奏，不追求快。</p>
+            <p>有些 ETF， 需要適度調整，回應市場變化。</p>
+            <p>也有些 ETF， 是在趨勢來的時候，順勢前進。</p>
+            <p>
+              Stockie 不用專有名詞分類 ETF， 而是把它們放進不同的「行為位置」。
+            </p>
+          </div>
+        </section>
+      </section>
+
+      <!-- 接續導向卡牌區 -->
+      <div class="cta-group cta-group--single">
+        <a class="cta-btn js-scroll" href="#etf-cards">
+          <span class="cta-btn__label">看 ETF 卡牌</span>
+          <span class="cta-btn__icon" aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      <!-- ETF 心法 -->
+      <section id="mindset" class="section">
+        <h2 class="section-title">
+          <span class="section-title__text">股市小白需要的存股心法</span>
+          <span class="section-title__arrow" aria-hidden="true">↘</span>
+        </h2>
+        <section class="split split--section is-reverse">
+          <div class="split__media">
+            <img src="./assets/images/ETF-mindset.png" alt="ETF mindset" />
+          </div>
+          <div class="split__content">
+            <h2>投資不是衝刺，而是站位</h2>
+            <p>ETF 不承諾你打敗市場， 它做的是另一件事：</p>
+            <ul class="category-list category-list--column">
+              <li>
+                <i class="fa-solid fa-building category-icon"></i>
+                <span class="category-label">降低選錯的機率</span>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-layer-group category-icon"></i>
+                <span class="category-label">提供穩定、可理解的路徑</span>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-coins category-icon"></i>
+                <span class="category-label">讓時間成為你的朋友</span>
+              </li>
+            </ul>
+            <p>
+              這也是為什麼 ETF 適合新手：<br />
+              你不是在選「哪一家公司最厲害」，<br />
+              而是在選「自己要用什麼節奏前進」。
+            </p>
+          </div>
+        </section>
+      </section>
+
+      <!-- 卡片列表區 -->
+      <section id="etf-cards" class="section">
+        <h2 class="section-title">
+          <span class="section-title__text">ETF 卡牌列表</span>
+          <span class="section-title__arrow" aria-hidden="true">↘</span>
+        </h2>
+
+        <section class="split split--section">
+          <div class="split__media">
+            <img src="./assets/images/ETF-card-type.png" alt="ETF card type" />
+          </div>
+          <div class="split__content">
+            <h2>ETF 不是線性成長，而是位置選擇</h2>
+
+            <a class="cta-btn js-scroll" href="#etfCardsList">
+              <span class="cta-btn__label">十大熱門 ETF 卡牌一覽</span>
+              <span class="cta-btn__icon" aria-hidden="true">↗</span>
+            </a>
+            <h2>投資不是衝刺，而是站位</h2>
+            <p>在 Stockie 的世界裡， 每一種 ETF 對應一種投資行為姿態。</p>
+            <p>
+              每一張卡牌，<br />
+              代表一種在市場中的行為位置。<br />
+
+              你可以慢慢看，<br />
+              感覺哪一張比較適合現在的自己。<br />
+            </p>
+          </div>
+        </section>
+
+        <section id="etf-world" class="world" aria-labelledby="world-title">
+          <div class="world-inner section-shell">
+            <header class="world-head">
+              <h2 id="world-title" class="world-title">ETF 四大世界觀</h2>
+              <p class="world-subtitle">
+                垂直方向代表「動能強度」：越上面越追勢能，越下面越接近市場本身。
+              </p>
+            </header>
+
+            <!-- 垂直四層（世界觀中四大類） -->
+            <ol class="world-stack" aria-label="World categories by momentum">
+              <!-- Rider -->
+              <li class="world-item" data-tier="rider">
+                <article
+                  class="tier split"
+                  aria-labelledby="tier-rider-title"
+                  aria-controls="tier-rider-detail"
+                  aria-expanded="false"
+                  role="button"
+                  tabindex="0"
+                >
+                  <!-- 圖：常駐小尺寸；hover 時變大 -->
+                  <div class="split__media" aria-hidden="true">
+                    <img
+                      class="tier-img"
+                      src="./assets/images/The-rider.png"
+                      alt="The Rider"
+                    />
+                  </div>
+
+                  <!-- 文：summary 常駐；detail hover 才展開 -->
+                  <div class="split__content">
+                    <header class="tier-meta">
+                      <h3 id="tier-rider-title" class="tier-name">The Rider</h3>
+                      <p class="tier-one-liner">乘勢加速｜順著趨勢往前衝</p>
+                    </header>
+
+                    <span class="tier-toggle-hint" aria-hidden="true">
+                      <span class="tier-toggle-hint__label">點擊查看</span>
+                      <span class="tier-toggle-hint__icon">↗</span>
+                    </span>
+
+                    <div
+                      id="tier-rider-detail"
+                      class="tier-detail"
+                      aria-hidden="true"
+                    >
+                      <p class="tier-worldview">
+                        世界觀：山脈／草原／上升坡道，勢能地形帶著你前進。
+                      </p>
+                      <ul class="tier-features">
+                        <li>成長型：偏向趨勢與主題性</li>
+                        <li>波動可能較大，但方向明確</li>
+                        <li>適合：能承受波動、想把握成長的人</li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+              </li>
+
+              <!-- Operator -->
+              <li class="world-item" data-tier="operator">
+                <article
+                  class="tier split"
+                  aria-labelledby="tier-operator-title"
+                  aria-controls="tier-operator-detail"
+                  aria-expanded="false"
+                  role="button"
+                  tabindex="0"
+                >
+                  <!-- 圖：常駐小尺寸；hover 時變大 -->
+                  <div class="split__media" aria-hidden="true">
+                    <img
+                      class="tier-img"
+                      src="./assets/images/The-operator.png"
+                      alt="the Operator"
+                    />
+                  </div>
+
+                  <!-- 文：summary 常駐；detail hover 才展開 -->
+                  <div class="split__content">
+                    <header class="tier-meta">
+                      <h3 id="tier-operator-title" class="tier-name">
+                        The Operator
+                      </h3>
+                      <p class="tier-one-liner">主動管理｜策略調整與切換</p>
+                    </header>
+
+                    <span class="tier-toggle-hint" aria-hidden="true">
+                      <span class="tier-toggle-hint__label">點擊查看</span>
+                      <span class="tier-toggle-hint__icon">↗</span>
+                    </span>
+
+                    <div
+                      id="tier-operator-detail"
+                      class="tier-detail"
+                      aria-hidden="true"
+                    >
+                      <p class="tier-worldview">
+                        世界觀：工坊／風場／機械化自然，透過裝置調整流向。
+                      </p>
+                      <ul class="tier-features">
+                        <li>操作型：輪動、配置、切換動能</li>
+                        <li>更依賴規則與策略（不是放著不管）</li>
+                        <li>適合：喜歡有機制、有控制感的人</li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+              </li>
+
+              <!-- Keeper -->
+              <li class="world-item" data-tier="keeper">
+                <article
+                  class="tier split"
+                  aria-labelledby="tier-keeper-title"
+                  aria-controls="tier-keeper-detail"
+                  aria-expanded="false"
+                  role="button"
+                  tabindex="0"
+                >
+                  <!-- 圖：常駐小尺寸；hover 時變大 -->
+                  <div class="split__media" aria-hidden="true">
+                    <img
+                      class="tier-img"
+                      src="./assets/images/The-keeper.png"
+                      alt="The keeper"
+                    />
+                  </div>
+
+                  <!-- 文：summary 常駐；detail hover 才展開 -->
+                  <div class="split__content">
+                    <header class="tier-meta">
+                      <h3 id="tier-keeper-title" class="tier-name">
+                        The Keeper
+                      </h3>
+                      <p class="tier-one-liner">
+                        穩定現金流｜守住節奏、累積時間
+                      </p>
+                    </header>
+
+                    <span class="tier-toggle-hint" aria-hidden="true">
+                      <span class="tier-toggle-hint__label">點擊查看</span>
+                      <span class="tier-toggle-hint__icon">↗</span>
+                    </span>
+
+                    <div
+                      id="tier-keeper-detail"
+                      class="tier-detail"
+                      aria-hidden="true"
+                    >
+                      <p class="tier-worldview">
+                        世界觀：森林，時間留下苔、年輪、落葉的痕跡。
+                      </p>
+                      <ul class="tier-features">
+                        <li>配息／現金流導向，追求「回來感」</li>
+                        <li>不追短線刺激，重視穩定節奏</li>
+                        <li>適合：想要可預期、想練長期心態的人</li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+              </li>
+
+              <!-- Passenger -->
+              <li class="world-item" data-tier="passenger">
+                <article
+                  class="tier split"
+                  aria-labelledby="tier-passenger-title"
+                  aria-controls="tier-passenger-detail"
+                  aria-expanded="false"
+                  role="button"
+                  tabindex="0"
+                >
+                  <!-- 圖：常駐小尺寸；hover 時變大 -->
+                  <div class="split__media" aria-hidden="true">
+                    <img
+                      class="tier-img"
+                      src="./assets/images/The-passenger.png"
+                      alt="The Passenger"
+                    />
+                  </div>
+
+                  <!-- 文：summary 常駐；detail hover 才展開 -->
+                  <div class="split__content">
+                    <header class="tier-meta">
+                      <h3 id="tier-passenger-title" class="tier-name">
+                        The Passenger
+                      </h3>
+                      <p class="tier-one-liner">市場本身｜穩健、長期、低情緒</p>
+                    </header>
+
+                    <span class="tier-toggle-hint" aria-hidden="true">
+                      <span class="tier-toggle-hint__label">點擊查看</span>
+                      <span class="tier-toggle-hint__icon">↗</span>
+                    </span>
+
+                    <div
+                      id="tier-passenger-detail"
+                      class="tier-detail"
+                      aria-hidden="true"
+                    >
+                      <p class="tier-worldview">
+                        世界觀：深海／外海，沒有邊界，像市場的底座。
+                      </p>
+                      <ul class="tier-features">
+                        <li>大盤／市場型：分散、穩健、長期</li>
+                        <li>波動仍有，但相對可理解</li>
+                        <li>適合：新手打底、建立投資肌肉記憶</li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            </ol>
+
+            <!-- Scroll hint -->
+            <a
+              class="hero-hint js-scroll"
+              href="#etfCardsList"
+              aria-label="往下滑，開始探索 ETF 卡牌"
+            >
+              <span class="hero-hint__text">
+                <p>
+                  當你滑入每個區塊，<br />
+                  你看到的不是商品說明，<br />
+                  而是一個「站在市場中的人」。
+                </p>
+              </span>
+              <span class="hero-hint__arrow" aria-hidden="true"></span>
+            </a>
+          </div>
+        </section>
+
+        <section id="etfCardsList" class="etfCardsList section section-shell">
+          <h2 class="section-title">
+            <span class="section-title__text">ETF 卡牌</span>
+            <span class="section-title__arrow" aria-hidden="true">↘</span>
+          </h2>
+          <section class="split split--section is-reverse">
+            <div class="split__media">
+              <img
+                src="./assets/images/ETF-difference.png"
+                alt="ETF difference"
+              />
+            </div>
+            <div class="split__content">
+              <h2>用角色，看懂 ETF 差異</h2>
+              <p>
+                每一張卡牌，<br />
+                都是一種投資行為的具象化：
+              </p>
+              <ul class="category-list category-list--column">
+                <li>
+                  <i class="fa-solid fa-building category-icon"></i>
+                  <span class="category-label">姿態，代表你是否主動</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-layer-group category-icon"></i>
+                  <span class="category-label">地形，代表市場如何影響你</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-coins category-icon"></i>
+                  <span class="category-label">材質，代表風險與時間感</span>
+                </li>
+              </ul>
+              <p>你不需要記代號，只需要感受：</p>
+              <h3>「這個位置，適不適合現在的我？」</h3>
+            </div>
+          </section>
+
+          <div id="etfCardsContainer">
+            <!-- JS 把卡片放進來 -->
+          </div>
+        </section>
+      </section>
+
+      <!-- 下一步可以做什麼 -->
+      <section id="next" class="section">
+        <h2 class="section-title">
+          <span class="section-title__text">下一步可以做什麼？</span>
+          <span class="section-title__arrow" aria-hidden="true">↘</span>
+        </h2>
+        <section class="split split--section">
+          <div class="split__media">
+            <img src="./assets/images/ETF-next.png" alt="ETF next" />
+          </div>
+          <div class="split__content">
+            <h2>下一步，不一定是買進</h2>
+            <p>
+              理解 ETF 的第一步，<br />
+              不是下單，而是 認清自己的位置。
+            </p>
+            <p>你可以：</p>
+
+            <ul class="category-list category-list--column">
+              <li>
+                <i class="fa-solid fa-building category-icon"></i>
+                <span class="category-label">比較不同角色的差異</span>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-layer-group category-icon"></i>
+                <span class="category-label">找出你最安心的站位</span>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-coins category-icon"></i>
+                <span class="category-label">再慢慢思考是否前進</span>
+              </li>
+            </ul>
+            <h3>Stockie 不是教你快，而是陪你站穩。</h3>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <section
+          class="site-footer__brand"
+          aria-labelledby="footer-brand-title"
+        >
+          <p class="site-footer__eyebrow">Personal Side Project</p>
+          <h2 id="footer-brand-title" class="site-footer__title">
+            Stockie ETF Journey
+          </h2>
+          <p class="site-footer__desc">
+            Stockie 把 ETF 轉譯成空間與行為，讓人用更直覺的方式理解投資節奏。
+          </p>
+          <p class="site-footer__desc">
+            這不是一個教你怎麼投資的網站，而是讓你先站在一個不會慌的位置上。
+          </p>
+        </section>
+
+        <nav class="site-footer__nav" aria-labelledby="footer-pages-title">
+          <p id="footer-pages-title" class="site-footer__label">Pages</p>
+          <ul class="site-footer__list">
+            <li><a href="#home" class="js-scroll">Home</a></li>
+            <li><a href="#etf-what" class="js-scroll">ETF 是什麼</a></li>
+            <li><a href="#etf-benefits" class="js-scroll">了解 ETF</a></li>
+            <li><a href="#mindset" class="js-scroll">存股心法</a></li>
+            <li><a href="#etf-cards" class="js-scroll">ETF 卡牌</a></li>
+            <li><a href="#next" class="js-scroll">下一步</a></li>
+          </ul>
+        </nav>
+
+        <section
+          class="site-footer__contact"
+          aria-labelledby="footer-contact-title"
+        >
+          <p id="footer-contact-title" class="site-footer__label">Contact</p>
+          <ul class="site-footer__list">
+            <li>
+              <a href="mailto:sean1415usc@gmail.com">sean1415usc@gmail.com</a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/li-shiuan-chen-17977125a"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Linkedin
+              </a>
+            </li>
+          </ul>
+          <p class="site-footer__name">Li Shiuan, Chen / Sean</p>
+        </section>
+
+        <div class="site-footer__bottom">
+          <p class="site-footer__meta">
+            Built and designed by Li Shiuan, Chen.
+          </p>
+          <p class="site-footer__meta">Demo project: ETF Index</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 先載入資料，再載入主程式 -->
+    <script type="module" src="scripts/main.js"></script>
+  </body>
+</html>

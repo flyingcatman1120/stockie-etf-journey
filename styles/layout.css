@@ -1,0 +1,60 @@
+/* styles/layout.css */
+
+:root{
+  --container-max: 1120px;
+  --container-pad: 24px;
+  --grid-gap: 24px;
+  --grid-cols: 12;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  /* padding: 16px; */
+}
+header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* 容器：限制內容寬度、置中、左右留白 */
+.container{
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-pad);
+}
+
+/* 12 欄格線 */
+.grid{
+  display: grid;
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  gap: var(--grid-gap);
+}
+
+/* 欄位：span 控制寬度 */
+.col-1 { grid-column: span 1; }
+.col-2 { grid-column: span 2; }
+.col-3 { grid-column: span 3; }
+.col-4 { grid-column: span 4; }
+.col-5 { grid-column: span 5; }
+.col-6 { grid-column: span 6; }
+.col-7 { grid-column: span 7; }
+.col-8 { grid-column: span 8; }
+.col-9 { grid-column: span 9; }
+.col-10{ grid-column: span 10; }
+.col-11{ grid-column: span 11; }
+.col-12{ grid-column: span 12; }
+
+/* 置中內容區塊 */
+.measure{
+  max-width: 72ch;
+}
+
+/* RWD */
+@media (max-width: 768px){
+  :root{ --grid-gap: 16px; }
+
+  /* 所有 col-* 在小螢幕滿版 */
+  [class^="col-"]{ grid-column: span 12; }
+}
