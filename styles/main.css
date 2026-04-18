@@ -75,6 +75,11 @@ body {
   line-height: 1.6;
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 h1 {
   font-size: 32px;
   margin: 0 0 16px;
@@ -304,7 +309,10 @@ a:focus-visible {
 @media (max-width: 560px) {
   .cta-group--pair {
     width: 100%;
+    flex-direction: column;
+    align-items: stretch;
     justify-content: stretch;
+    gap: 12px;
     padding: 14px;
   }
 
@@ -1186,6 +1194,10 @@ a:focus-visible {
   .cta-btn {
     width: 100%;
     min-width: 0;
+  }
+
+  .cta-btn__label {
+    white-space: normal;
   }
 }
 
