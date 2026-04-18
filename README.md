@@ -25,7 +25,7 @@ Stockie ETF Journey 是一個以靜態前端製作的視覺化作品，透過角
 
 專案發布後，可以將線上展示連結補在這裡。
 
-- GitHub Pages：`https://<your-github-username>.github.io/stockie-etf-journey/`
+- GitHub Pages：`https://flyingcatman1120.github.io/stockie-etf-journey/`
 
 ### 專案截圖
 
@@ -131,7 +131,7 @@ This project turns ETF education into a narrative-driven landing page experience
 
 After publishing this repository, add your live site link here.
 
-- GitHub Pages: `https://<your-github-username>.github.io/stockie-etf-journey/`
+- GitHub Pages: `https://flyingcatman1120.github.io/stockie-etf-journey/`
 
 ### Screenshots
 
